@@ -1,14 +1,18 @@
 // ThemeContext.js
 import { createContext, useMemo, useState } from "react";
-import { CssBaseline, ThemeProvider } from "@mui/material";
+import { CssBaseline, ThemeProvider, useMediaQuery } from "@mui/material";
 import PropTypes from "prop-types";
 import getTheme from "theme";
 
 export const ColorModeContext = createContext();
 
 export function ColorModeProvider({ children }) {
+  const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [mode, setMode] = useState(localStorage.getItem("mode") || "light");
   const [page, setPage] = useState("home");
+
+  const effectiveMode =
+    mode === "system" ? (prefersDarkMode ? "dark" : "light") : mode;
 
   const toggleColorMode = (mode) => {
     setMode(() => {
@@ -21,7 +25,7 @@ export function ColorModeProvider({ children }) {
     setPage(page);
   };
 
-  const theme = useMemo(() => getTheme(mode), [mode]);
+  const theme = useMemo(() => getTheme(effectiveMode), [effectiveMode]);
 
   return (
     <ColorModeContext.Provider

@@ -31,7 +31,11 @@ const ThemeToggle = () => {
           <Moon size={16} />
         </ToggleButton>
 
-        <ToggleButton sx={{ ...buttonStyles }}>
+        <ToggleButton
+          sx={{ ...buttonStyles }}
+          selected={mode === "system"}
+          onClick={() => toggleColorMode("system")}
+        >
           <LaptopMinimal size={16} />
         </ToggleButton>
       </Stack>
@@ -44,5 +48,5 @@ export default ThemeToggle;
 const buttonStyles = {
   p: 0.75,
   borderRadius: "50%",
-  border: 'none'
+  border: "none",
 };
