@@ -45,7 +45,11 @@ const Footer = () => {
         </Typography>
 
         <Stack direction={"row"} justifyContent={"center"} mb={4}>
-          <Button variant="contained" onClick={() => togglePage("contact")}>
+          <Button
+            aria-label="Contact"
+            variant="contained"
+            onClick={() => togglePage("contact")}
+          >
             Contact me
           </Button>
         </Stack>

@@ -13,6 +13,7 @@ const IntroSection = () => {
           <Box
             component="img"
             src={Profile}
+            alt="profile image"
             width={60}
             height={60}
             sx={{
@@ -55,7 +56,7 @@ const IntroSection = () => {
 
         <Box>
           <Stack direction={"row"} justifyContent={"flex-start"} spacing={1}>
-            <Button variant="contained" onClick={() => togglePage("contact")}>
+            <Button aria-label="Contact" variant="contained" onClick={() => togglePage("contact")}>
               Get in touch
             </Button>
           </Stack>

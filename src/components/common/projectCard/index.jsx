@@ -27,8 +27,10 @@ const ProjectCard = ({ data, index }) => {
           }}
         >
           <Box
+            loading="lazy"
             component={"img"}
             src={data.image}
+            alt={data.subtitle}
             sx={{
               maxWidth: "100%",
               height: "auto",
@@ -59,5 +61,5 @@ export default ProjectCard;
 
 ProjectCard.propTypes = {
   data: PropTypes.object,
-  index: PropTypes.number
+  index: PropTypes.number,
 };

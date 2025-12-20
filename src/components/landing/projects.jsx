@@ -57,7 +57,7 @@ const Projects = () => {
               return (
                 <Grid size={{ xs: 12, sm: 6 }} key={project.id}>
                   <Box sx={{ position: "relative" }}>
-                    <ProjectCard data={project} index={index}/>
+                    <ProjectCard data={project} index={index} />
 
                     {isFaded && (
                       <Box
@@ -88,11 +88,19 @@ const Projects = () => {
           {hasFadedCards && (
             <Box textAlign="center" mt={3}>
               {expanded ? (
-                <Button variant="outlined" onClick={() => setExpanded(false)}>
+                <Button
+                  aria-label="Show less Projects"
+                  variant="outlined"
+                  onClick={() => setExpanded(false)}
+                >
                   Show Less
                 </Button>
               ) : (
-                <Button variant="contained" onClick={() => setExpanded(true)}>
+                <Button
+                  aria-label="Show more projects"
+                  variant="contained"
+                  onClick={() => setExpanded(true)}
+                >
                   Show More
                 </Button>
               )}

@@ -16,6 +16,7 @@ const ThemeToggle = () => {
         px={2}
       >
         <ToggleButton
+          aria-label="Light Theme"
           sx={{ ...buttonStyles }}
           selected={mode === "light"}
           onClick={() => toggleColorMode("light")}
@@ -24,6 +25,7 @@ const ThemeToggle = () => {
         </ToggleButton>
 
         <ToggleButton
+          aria-label="Dark Theme"
           sx={{ ...buttonStyles }}
           selected={mode === "dark"}
           onClick={() => toggleColorMode("dark")}
@@ -32,6 +34,7 @@ const ThemeToggle = () => {
         </ToggleButton>
 
         <ToggleButton
+          aria-label="System Theme"
           sx={{ ...buttonStyles }}
           selected={mode === "system"}
           onClick={() => toggleColorMode("system")}

@@ -13,6 +13,7 @@ const SocialSection = () => {
           <Stack direction={"row"} spacing={1}>
             {socialButtons.map((btn) => (
               <Button
+                aria-label={`Find me on ${btn.title}`}
                 key={btn.title}
                 sx={{ color: (theme) => theme.palette.text.primary }}
                 compocomponent="a"
