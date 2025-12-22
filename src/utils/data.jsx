@@ -1,9 +1,9 @@
 //PROJECT ASSETS
-import AirPulse from "assets/projects/air_pulse_img.png";
-import Momentum from "assets/projects/momentum_image.png";
-import Democratic_India from "assets/projects/democratic_india_img.png";
-import Loom from "assets/projects/loom_image.png";
-import Trails from "assets/projects/trails_image.png";
+import AirPulse from "assets/projects/air_pulse_img.webp";
+import Momentum from "assets/projects/momentum_image.webp";
+import Democratic_India from "assets/projects/democratic_india_img.webp";
+import Loom from "assets/projects/loom_image.webp";
+import Trails from "assets/projects/trails_image.webp";
 
 //ToolImages
 import Chatgpt from "assets/tools/chatgpt.svg";

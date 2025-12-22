@@ -1,5 +1,5 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
-import Profile from "assets/profile_image.png";
+import Profile from "assets/profile_image.webp";
 import { ColorModeContext } from "contexts/themeContext";
 import { useContext } from "react";
 
