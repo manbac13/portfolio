@@ -4,6 +4,7 @@ import Momentum from "assets/projects/momentum_image.webp";
 import Democratic_India from "assets/projects/democratic_india_img.webp";
 import Loom from "assets/projects/loom_image.webp";
 import Trails from "assets/projects/trails_image.webp";
+import HabitForge from "assets/projects/habitForge.webp";
 
 //ToolImages
 import Chatgpt from "assets/tools/chatgpt.svg";
@@ -40,6 +41,20 @@ export const projectData = [
     image: AirPulse,
     github: "https://github.com/manbac13/air_pulse",
     live: "https://airpulse.vercel.app/",
+  },
+  {
+    id: 6,
+    project_name: "HabitForge",
+    subtitle: "A Progress Tracker App",
+    tech_used: ["React", "Material UI", "Openweather Api", "Redux"],
+    card_desc: "Track your goals and improve efficiency.",
+    description: "",
+    overview:
+      "Habit Forge provides users with a structured and motivating way to track their goals and build positive habits over time. Users can set personalized goals, monitor their daily progress, and stay accountable with consistent tracking, helping them develop discipline and achieve long-term success.",
+    // icon: <Droplet />,
+    image: HabitForge,
+    github: "https://github.com/manbac13/habitforge",
+    live: "https://habitforge-taupe.vercel.app/",
   },
   {
     id: 2,
