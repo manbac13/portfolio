@@ -4,6 +4,10 @@ import "./index.css";
 import App from "./App.jsx";
 import { ColorModeProvider } from "contexts/themeContext";
 
+import { initGA } from "./analytics";
+
+initGA();
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <ColorModeProvider>
